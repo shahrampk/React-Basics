@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-Inter: "Inter", sans-serif;
+  --animate-slide-bottom: "slide-bottom 2s forwards";
+
+  @keyframes slide-bottom {
+    0% {
+      transform: "translateY(100%)";
+      opacity: "0";
+    }
+    100% {
+      transform: "translateY(0)";
+      opacity: "1";
+    }
+  }
+}
+
+.secondary-btn {
+  box-shadow: 0 0 0px 1px oklch(70.4% 0.14 182.503);
+  cursor: pointer;
+  padding: 4px 16px;
+  border-radius: 4px;
+}
+.secondary-btn:hover {
+  background-color: oklch(71.08% 0.12717 182.261 / 0.201);
+}
