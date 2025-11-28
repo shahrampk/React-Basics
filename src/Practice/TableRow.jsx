@@ -3,7 +3,7 @@ import React from "react";
 const TableRow = ({user}) => {
   return (
     <tr key={user.id} className="hover:bg-gray-800/60 transition duration-200">
-      <td className="border border-gray-700 px-6 py-4 text-gray-200">
+      <td className="border-2 border-gray-700 px-6 py-4 text-gray-200">
         {user.id}
       </td>
       <td className="border border-gray-700 px-6 py-4 font-medium text-white">

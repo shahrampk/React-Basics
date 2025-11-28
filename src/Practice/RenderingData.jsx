@@ -63,7 +63,7 @@ const RenderingData = () => {
     <div>
       <h1 className="text-4xl font-medium">Looping on Jsx using map</h1>
       <table className="w-full border-collapse bg-gray-900 text-sm text-gray-300 mt-10 text-center">
-        <thead className="bg-gray-800/80 backdrop-blur-xs">
+        {/* <thead className="bg-gray-800/80 backdrop-blur-xs">
           <tr>
             <th className="px-6 py-4 font-semibold text-xl text-white">Id</th>
             <th className="px-6 py-4 font-semibold border-l border-gray-700 text-xl text-white">
@@ -88,7 +88,7 @@ const RenderingData = () => {
               Country
             </th>
           </tr>
-        </thead>
+        </thead> */}
 
         <tbody className="divide divide-gray00">
           {users.map((user) => (

@@ -6,7 +6,7 @@ const ClockDropDown = ({ setColor, color }) => {
       <select
         name="colors"
         id="colors"
-        className="text-xl bg-black px-5 py-2 rounded-md border"
+        className="text-xl text-white bg-black px-5 py-2 rounded-md border"
         defaultValue={color}
         onChange={(e) => setColor(e.target.value)}
       >

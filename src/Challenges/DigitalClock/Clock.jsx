@@ -13,8 +13,7 @@ const Clock = ({ color }) => {
 
   return (
     <div
-      style={{ backgroundColor: "#141A1F" }}
-      className="w-fit text-3xl px-5 py-3 rounded-lg"
+      className="bg-white/10 w-fit text-3xl px-5 py-3 rounded-lg"
     >
       <h1 style={{ color: color }} className="font-semibold font-mono">
         {currentTime}

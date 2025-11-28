@@ -1,10 +1,7 @@
-import UseFormStatusHook from "./Practice/UseFormStatusHook";
+
+import DataManagment from "./Challenges/Data_Managment/DataManagment";
 const App = () => {
-  return (
-    <div className=" bg-black min-h-screen text-gray-200 font-Inter selection:bg-teal-500/40 p-10 ">
-      <UseFormStatusHook />
-    </div>
-  );
+  return <DataManagment />;
 };
 
 export default App;
