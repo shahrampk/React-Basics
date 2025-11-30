@@ -5,7 +5,7 @@ import { Database } from "lucide-react";
 
 const DataManagment = () => {
   const [users, setUsers] = useState(
-    [] && JSON.parse(localStorage.getItem("users"))
+    [] || JSON.parse(localStorage.getItem("users"))
   );
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users));

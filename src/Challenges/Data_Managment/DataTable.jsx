@@ -12,6 +12,8 @@ const DataTable = ({ users }) => {
         </tr>
       </thead>
       <tbody>
+        {console.log(users)}
+
         {users.map((user) => {
           return (
             <tr

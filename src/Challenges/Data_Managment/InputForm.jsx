@@ -7,13 +7,8 @@ const InputForm = ({ users, setUsers }) => {
   const handleForm = (e) => {
     e.preventDefault();
     setUsers([
+      { id: Date.now(), name: name, email: email, password: password },
       ...users,
-      {
-        id: Date.now(),
-        name: name,
-        email: email,
-        password: password,
-      },
     ]);
   };
 
