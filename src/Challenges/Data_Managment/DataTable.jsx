@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 
 const DataTable = ({ users }) => {
   return (
@@ -12,12 +12,10 @@ const DataTable = ({ users }) => {
         </tr>
       </thead>
       <tbody>
-        {console.log(users)}
-
-        {users.map((user) => {
+        {users.map((user, i) => {
           return (
             <tr
-              key={user.id}
+              key={i}
               className=" grid grid-cols-4 justify-between w-full text-center divide-black"
             >
               <td className="p-5 border border-gray-900/30 ">{user.id}</td>
