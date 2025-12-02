@@ -36,3 +36,5 @@
 9) Tables 
 10) Update Objects
 11) Update Arrays
+12) Fragments in react
+13) Context API (Important)
