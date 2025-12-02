@@ -6,50 +6,54 @@
 
 ---
 
-### 1) How to Style  
-- Styled Components  
-- Importing & Exporting Components  
-- Inline Styling  
-- External Styling  
-- Using Tailwind CSS  
+### 1) How to Style
+
+- Styled Components
+- Importing & Exporting Components
+- Inline Styling
+- External Styling
+- Using Tailwind CSS
 
 ---
 
-### 2) Hooks  
-- useState  
-- useEffect  
-- useRef  
-- useFormStatus  
-- useTransition  
-- useActiveState  
-- useId  
+### 2) Hooks
+
+- useState
+- useEffect
+- useRef
+- useFormStatus
+- useTransition
+- useActiveState
+- useId
+- CustomHooks
 
 ---
 
-### 3) Forms  
-- Checkbox  
-- Dropdown  
-- Radio Button  
-- Input Fields  
+### 3) Forms
+
+- Checkbox
+- Dropdown
+- Radio Button
+- Input Fields
 
 ---
 
-### 4) Props Handling  
+### 4) Props Handling
 
-### 5) Derived State  
+### 5) Derived State
 
-### 6) ForwardRef  
+### 6) ForwardRef
 
-### 7) Images  
+### 7) Images
 
-### 8) Data Rendering  
+### 8) Data Rendering
 
-### 9) Tables  
+### 9) Tables
 
-### 10) Update Objects  
+### 10) Update Objects
 
-### 11) Update Arrays  
+### 11) Update Arrays
 
-### 12) Fragments in React  
+### 12) Fragments in React
 
 ### 13) Context API (Important)
