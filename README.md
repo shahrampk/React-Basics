@@ -1,40 +1,55 @@
 # React Basics
 
-## Learn EveryThing about react ⚛️.
+## Learn Everything about React ⚛️
 
-### Concept covers in this Course are: 
+### Concepts covered in this course:
 
-1) How to Style 
-  => Styled Components
-  => Importing exporting component
-  => Inline styling
-  => External Styling
-  => Using Tailwind
+---
 
-3) Hooks 
-  => useState
-  => useEffect
-  => useRef
-  => useFormStatus
-  => useTransition
-  => useActiveState
-  => useId
+### 1) How to Style  
+- Styled Components  
+- Importing & Exporting Components  
+- Inline Styling  
+- External Styling  
+- Using Tailwind CSS  
 
+---
 
-2) Forms
-  => CheckBox  
-  => DropDown 
-  => Radio Btn  
-  => Input Fields  
+### 2) Hooks  
+- useState  
+- useEffect  
+- useRef  
+- useFormStatus  
+- useTransition  
+- useActiveState  
+- useId  
 
+---
 
-4) Props Handling
-5) DrivedState
-6) ForWordRef
-7) Images
-8) Data Rendering 
-9) Tables 
-10) Update Objects
-11) Update Arrays
-12) Fragments in react
-13) Context API (Important)
+### 3) Forms  
+- Checkbox  
+- Dropdown  
+- Radio Button  
+- Input Fields  
+
+---
+
+### 4) Props Handling  
+
+### 5) Derived State  
+
+### 6) ForwardRef  
+
+### 7) Images  
+
+### 8) Data Rendering  
+
+### 9) Tables  
+
+### 10) Update Objects  
+
+### 11) Update Arrays  
+
+### 12) Fragments in React  
+
+### 13) Context API (Important)
