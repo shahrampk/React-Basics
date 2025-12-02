@@ -5,27 +5,27 @@
 ### Concept covers in this Course are: 
 
 1) How to Style 
-  $$ Styled Components
-  $$ Importing exporting component
-  $$ Inline styling
-  $$ External Styling
-  $$ Using Tailwind
+  => Styled Components
+  => Importing exporting component
+  => Inline styling
+  => External Styling
+  => Using Tailwind
 
 3) Hooks 
-  $$ useState
-  $$ useEffect
-  $$ useRef
-  $$ useFormStatus
-  $$ useTransition
-  $$ useActiveState
-  $$ useId
+  => useState
+  => useEffect
+  => useRef
+  => useFormStatus
+  => useTransition
+  => useActiveState
+  => useId
 
 
 2) Forms
-  $$ CheckBox  
-  $$ DropDown 
-  $$ Radio Btn  
-  $$ Input Fields  
+  => CheckBox  
+  => DropDown 
+  => Radio Btn  
+  => Input Fields  
 
 
 4) Props Handling
