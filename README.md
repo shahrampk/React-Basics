@@ -2,62 +2,39 @@
 
 ## Learn EveryThing about react ⚛️.
 
-### Concept covers in this Course are:
+### Concept covers in this Course are: 
 
-## How to Style
+1) How to Style 
+  $$ Styled Components
+  $$ Importing exporting component
+  $$ Inline styling
+  $$ External Styling
+  $$ Using Tailwind
 
-#### Styled Components
+3) Hooks 
+  $$ useState
+  $$ useEffect
+  $$ useRef
+  $$ useFormStatus
+  $$ useTransition
+  $$ useActiveState
+  $$ useId
 
-#### Importing exporting component
 
-#### Inline styling
+2) Forms
+  $$ CheckBox  
+  $$ DropDown 
+  $$ Radio Btn  
+  $$ Input Fields  
 
-#### External Styling
 
-#### Using Tailwind
-
-## Hooks
-
-#### useState
-
-#### useEffect
-
-#### useRef
-
-#### useFormStatus
-
-#### useTransition
-
-#### useActiveState
-
-#### useId
-
-## Forms
-
-#### CheckBox
-
-#### DropDown
-
-#### Radio Btn
-
-#### Input Fields
-
-## Props Handling
-
-## DrivedState
-
-## ForWordRef
-
-## Images
-
-## Data Rendering
-
-## Tables
-
-## Update Objects
-
-## Update Arrays
-
-## Fragments in react
-
-## Context API (Important)
+4) Props Handling
+5) DrivedState
+6) ForWordRef
+7) Images
+8) Data Rendering 
+9) Tables 
+10) Update Objects
+11) Update Arrays
+12) Fragments in react
+13) Context API (Important)
