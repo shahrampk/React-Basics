@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ColorGenerator = () => {
   const [colors, setColors] = useState([]);
+  const copiedRef = useRef();
   const color = () => Math.floor(Math.random() * 255 + 1);
   const colorGenerator = () => {
     // rgba(255, 255, 255, 0.33121)
@@ -34,12 +35,8 @@ const ColorGenerator = () => {
               onClick={() => {
                 window.navigator.clipboard.writeText(color);
               }}
-              className="h-56 rounded-xl border border-gray-100/30 cursor-pointer group relative"
-            >
-              <p className="hidden font-black group-active:inline transition-all absolute -top-10 duration-300 -rotate-x-20 rotate-y-20 text-shadow-md text-shadow-black">
-                Copied 👍
-              </p>
-            </div>
+              className="h-56 rounded-xl border border-gray-100/30 cursor-pointer"
+            ></div>
           );
         })}
       </div>
@@ -50,15 +47,30 @@ const ColorGenerator = () => {
         >
           ReGenerate
         </button>
-        <button
+        <div
+          className="relative"
           onClick={() => {
-            window.navigator.clipboard.writeText(colors);
-
+            copiedRef.current.classList.remove("invisible");
+            setTimeout(() => {
+              copiedRef.current.classList.add("invisible");
+            }, 500);
           }}
-          className="text-lg transition-all duration-200 bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600  px-4 py-2  text-white rounded font-medium cursor-pointer"
         >
-          Copy Palette
-        </button>
+          <p
+            ref={copiedRef}
+            className=" absolute bottom-full translate-x-5 -translate-y-3 -rotate-z-10 text-black invisible"
+          >
+            Copied 👍
+          </p>
+          <button
+            onClick={() => {
+              window.navigator.clipboard.writeText(colors);
+            }}
+            className="text-lg transition-all duration-200 bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600  px-4 py-2  text-white rounded font-medium cursor-pointer"
+          >
+            Copy Palette
+          </button>
+        </div>
       </div>
     </div>
   );

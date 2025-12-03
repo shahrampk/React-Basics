@@ -4,8 +4,8 @@ import { Link } from "react-router";
 const HeroSection = () => {
   return (
     <div className="h-7/8 flex gap-8 justify-center items-center flex-col col-start-2 col-span-3">
-      <h1 className="animate-slide-bottom text-5xl text-center leading-snug font-bold">
-        Chose beautiful and professional Images <br /> with high resolution
+      <h1 className="animate-slide-bottom text-7xl text-center leading font-bold">
+       Let's create something <br /> with React
       </h1>
       <div className="flex gap-3 text-lg">
         <Link
