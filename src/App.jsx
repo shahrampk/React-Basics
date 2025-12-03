@@ -1,23 +1,9 @@
-import { useState } from "react";
-import useCustomHook from "./Practice/Hooks/useCustomHook";
+import PasswordGenerator from "./Challenges/PasswordGenerator/PasswordGenerator";
 
 const App = () => {
-  const [input, setInput] = useState("");
-  const [val, formateVal] = useCustomHook("shahram 12");
-
   return (
-    <div className="min-h-screen bg-gray-600 p-20 gap-10">
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => {
-          setInput(e.target.value);
-          formateVal(e.target.value);
-        }}
-        className="border px-4 py-2 outline-none text-white mb-5"
-      />
-      <hr />
-      <h1 className="text-3xl text-white">{val}</h1>
+    <div className="min-h-screen justify-center items-center grid grid-cols-5">
+      <PasswordGenerator />
     </div>
   );
 };

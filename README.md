@@ -2,6 +2,14 @@
 
 ## Learn Everything about React ⚛️
 
+### Some Projects on this Course
+
+- ColorGenerator
+- DataManagement
+- Digital Clock
+- FlipCard
+- Password Generator
+
 ### Concepts covered in this course:
 
 ---
@@ -57,3 +65,5 @@
 ### 12) Fragments in React
 
 ### 13) Context API (Important)
+
+### 14) React Router
