@@ -20,8 +20,8 @@ const ColorGenerator = () => {
   }, []);
 
   return (
-    <div className="my-10 w-full text-white flex flex-col gap-10 items-center">
-      <p className="text-5xl xl:text-7xl text-black text-shadow-md text-shadow-green-600 font-black">
+    <div className="my-10 col-start-2 col-span-3 text-white flex flex-col gap-10 items-center">
+      <p className="text-5xl xl:text-7xl text-black font-extrabold">
         Color Palette Generator
       </p>
       <div className="grid gap-5 w-full px-10 h-full grid-cols-5 flex-wrap justify-center">
@@ -34,7 +34,7 @@ const ColorGenerator = () => {
               onClick={() => {
                 window.navigator.clipboard.writeText(color);
               }}
-              className="h-full rounded-xl border border-gray-100/30 cursor-pointer group relative"
+              className="h-56 rounded-xl border border-gray-100/30 cursor-pointer group relative"
             >
               <p className="hidden font-black group-active:inline transition-all absolute -top-10 duration-300 -rotate-x-20 rotate-y-20 text-shadow-md text-shadow-black">
                 Copied 👍
@@ -43,12 +43,23 @@ const ColorGenerator = () => {
           );
         })}
       </div>
-      <button
-        onClick={generateColorArr}
-        className="text-lg bg-black shadow-md px-4 py-2 rounded shadow-green-600 cursor-pointer hover:scale-110 active:scale-90 transition-all duration-100"
-      >
-        ReGenerate
-      </button>
+      <div className="flex gap-5">
+        <button
+          onClick={generateColorArr}
+          className="text-lg transition-all duration-200 bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600  px-4 py-2  text-white rounded font-medium cursor-pointer"
+        >
+          ReGenerate
+        </button>
+        <button
+          onClick={() => {
+            window.navigator.clipboard.writeText(colors);
+
+          }}
+          className="text-lg transition-all duration-200 bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600  px-4 py-2  text-white rounded font-medium cursor-pointer"
+        >
+          Copy Palette
+        </button>
+      </div>
     </div>
   );
 };
