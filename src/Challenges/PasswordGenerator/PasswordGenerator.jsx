@@ -39,7 +39,7 @@ const PasswordGenerator = () => {
     generatePassword();
   }, []);
   return (
-    <div className="bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600 rounded-2xl col-span-3 col-start-2 h-2/3 shadow-xl shadow-black/30 p-8 flex flex-col items-center text-white justify-between">
+    <div className="text-white bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600 rounded-2xl col-span-3 col-start-2 h-2/3 shadow-xl shadow-black/30 p-8 flex flex-col items-center justify-between">
       <div className="flex flex-col gap-3 bg-white/20 py-3 px-5 rounded-lg items-center">
         <h1 className="text-6xl font-extrabold">SecureGen</h1>
         <p className="text-lg">Password Generator App</p>
