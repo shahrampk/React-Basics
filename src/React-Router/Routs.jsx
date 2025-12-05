@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, Routes } from "react-router";
+import { Link, Route, Routes } from "react-router";
 import HeroSection from "../Practice/Navbar/HeroSection";
 import PasswordGenerator from "../Challenges/PasswordGenerator/PasswordGenerator";
 import ColorGenerator from "../Challenges/ColorGenerator/ColorGenerator";
-import { Collage, Departments, Details, Students } from "./index";
+import { Collage, Departments, Details, Page_404, Students } from "./index";
 
 const Routs = () => {
   return (
@@ -16,18 +16,7 @@ const Routs = () => {
         <Route path="details" element={<Details />} />
         <Route path="students" element={<Students />} />
       </Route>
-      <Route
-        path="/*"
-        element={
-          <div className="col-span-full flex justify-center text-4xl">
-            <img
-              src="https://support.heberjahiz.com/hc/article_attachments/21013076295570"
-              alt="404 Page Not Found"
-              className="h-96"
-            />
-          </div>
-        }
-      />
+      <Route path="/*" element={<Page_404 />} />
     </Routes>
   );
 };
