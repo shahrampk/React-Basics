@@ -35,6 +35,14 @@ const Navbar = () => {
               PasswordGenerator
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              to="/collage"
+            >
+              Collage
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

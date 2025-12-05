@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+import { Link } from "react-router";
+import { Students, Departments, Details } from "../index";
+
+const Collage = () => {
+  const [page, setPage] = useState("students");
+  console.log(page);
+
+  return (
+    <div className="col-span-full flex justify-center flex-col gap-10 h-full items-center">
+      <h1 className="text-5xl font-bold">Collage Details</h1>
+      <ul className="flex text-xl gap-5 text-violet-800">
+        <li>
+          <Link onClick={(e) => setPage(e.target.textContent)} to="students">
+            Students
+          </Link>
+        </li>
+        <li>
+          <Link onClick={(e) => setPage(e.target.textContent)} to="departments">
+            Department
+          </Link>
+        </li>
+        <li>
+          <Link onClick={(e) => setPage(e.target.textContent)} to="details">
+            Details
+          </Link>
+        </li>
+      </ul>
+      {page === "Students" ? (
+        <Students />
+      ) : page === "Department" ? (
+        <Departments />
+      ) : (
+        <Details />
+      )}
+    </div>
+  );
+};
+
+export default Collage;
