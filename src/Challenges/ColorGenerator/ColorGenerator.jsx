@@ -21,7 +21,7 @@ const ColorGenerator = () => {
   }, []);
 
   return (
-    <div className="my-10 col-start-2 col-span-3 flex flex-col gap-10 items-center">
+    <div className="text-black my-10 col-start-2 col-span-3 flex flex-col gap-10 items-center">
       <p className="text-5xl xl:text-7xl font-extrabold">
         Color Palette Generator
       </p>

@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center px-10 py-5 fixed w-full text-white bg-black/20 backdrop-blur-sm">
+    <header className="flex justify-between items-center px-10 py-5 fixed w-full text-white bg-black/80 backdrop-blur-sm">
       <div className="logoBox">
         <Link to="/" className="text-2xl font-bold">
           SecureGen
