@@ -13,7 +13,11 @@ const Navbar = () => {
         <ul className="flex gap-3">
           <li>
             <NavLink
-              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 hover:bg-red-500 rounded-md transition-all duration-200 ${
+                  isActive ? "bg-red-600" : null
+                }`
+              }
               to="/"
             >
               Home
@@ -21,7 +25,11 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 hover:bg-red-500 rounded-md transition-all duration-200 ${
+                  isActive ? "bg-red-600" : null
+                }`
+              }
               to="/Color-generator"
             >
               ColorGenerator
@@ -29,7 +37,11 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 hover:bg-red-500 rounded-md transition-all duration-200 ${
+                  isActive ? "bg-red-600" : null
+                }`
+              }
               to="/Password-generator"
             >
               PasswordGenerator
@@ -37,7 +49,11 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 hover:bg-red-500 rounded-md transition-all duration-200 ${
+                  isActive ? "bg-red-600" : null
+                }`
+              }
               to="/collage"
             >
               Collage
@@ -45,7 +61,11 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 hover:bg-red-500 rounded-md transition-all duration-200 ${
+                  isActive ? "bg-red-600" : null
+                }`
+              }
               to="/users"
             >
               Users

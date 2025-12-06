@@ -76,3 +76,4 @@
 - Nested Routing
 - Dynamic Routing ( For Dynamic segments we add Colon(:) before the Dynamic segment )
 - Optional Segments ( For optional segments we add Question mark after the optional segment )
+- active class and isActive property of NavLink
