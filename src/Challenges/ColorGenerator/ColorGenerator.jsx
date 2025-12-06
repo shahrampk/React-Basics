@@ -21,11 +21,11 @@ const ColorGenerator = () => {
   }, []);
 
   return (
-    <div className="text-black my-10 col-start-2 col-span-3 flex flex-col gap-10 items-center">
-      <p className="text-5xl xl:text-7xl font-extrabold">
+    <div className="text-black my-10 md:col-start-2 md:col-span-3 w-full px-10 md:p-0 flex flex-col gap-10 items-center">
+      <p className="text-5xl xl:text-6xl font-extrabold">
         Color Palette Generator
       </p>
-      <div className="grid gap-5 w-full px-10 h-full grid-cols-5 flex-wrap justify-center">
+      <div className="grid gap-5 w-full md:px-10 h-full grid-cols-5 flex-wrap justify-center">
         {colors.map((color) => {
           return (
             <div

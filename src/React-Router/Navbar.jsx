@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, Outlet } from "react-router";
 
 const Navbar = () => {
   return (
@@ -41,6 +41,14 @@ const Navbar = () => {
               to="/collage"
             >
               Collage
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="px-4 py-2 hover:bg-blue-500 rounded-md transition-all duration-200"
+              to="/users"
+            >
+              Users
             </NavLink>
           </li>
         </ul>

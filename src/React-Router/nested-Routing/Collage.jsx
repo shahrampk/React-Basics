@@ -8,7 +8,7 @@ const Collage = () => {
       <h1 className="text-5xl font-bold">Collage Details</h1>
       <ul className="flex text-xl gap-5 text-violet-800">
         <li>
-          <Link to="students">Students</Link>
+          <Link to="">Students</Link>
         </li>
         <li>
           <Link to="departments">Department</Link>

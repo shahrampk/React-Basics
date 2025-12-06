@@ -67,8 +67,10 @@
 ### 13) Context API (Important)
 
 ### 14) React Router
- - Router
- - Routs
- - Rout
- - Default Links
- - Nested Routing
+
+- Router
+- Routs
+- Rout
+- Default Links
+- Nested Routing
+- Dynamic Routing

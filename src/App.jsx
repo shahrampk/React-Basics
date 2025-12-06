@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen justify-center items-center grid grid-cols-5">
+      <div className="min-h-screen md:justify-center items-center flex md:grid grid-cols-5">
         <Routs />
       </div>
     </>
