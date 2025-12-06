@@ -37,7 +37,7 @@
 
 ---
 
-### 3) Forms
+### 3) Handle Forms
 
 - Checkbox
 - Dropdown
@@ -72,5 +72,7 @@
 - Routs
 - Rout
 - Default Links
+- Static Routing
 - Nested Routing
-- Dynamic Routing
+- Dynamic Routing ( For Dynamic segments we add Colon(:) before the Dynamic segment )
+- Optional Segments ( For optional segments we add Question mark after the optional segment )

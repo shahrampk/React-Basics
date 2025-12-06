@@ -20,7 +20,7 @@ const Routs = () => {
       <Route path="/Color-generator" element={<ColorGenerator />} />
       <Route path="/Password-generator" element={<PasswordGenerator />} />
       <Route path="/users" element={<Users />} />
-      <Route path="/user/:id" element={<UserDetails />} />
+      <Route path="/user/:id/:name?" element={<UserDetails />} /> {/* For optional segments we add Question mark after the optional segment  */}
       <Route path="/collage" element={<Collage />}>
         <Route path="departments" element={<Departments />} />
         <Route path="details" element={<Details />} />

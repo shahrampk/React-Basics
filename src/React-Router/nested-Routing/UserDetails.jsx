@@ -3,12 +3,16 @@ import React from "react";
 import { Link, useParams } from "react-router";
 
 const UserDetails = () => {
-  const { id } = useParams();
+  const details = useParams();
+
   return (
     <div className="col-span-full flex justify-center flex-col gap-10 h-full items-center">
-      <h1 className="text-3xl">
-        Users id <ArrowBigRight className="inline" /> {id}{" "}
-      </h1>
+      <div>
+        <h1 className="text-3xl">
+          Users id <ArrowBigRight className="inline" /> {details.id}
+        </h1>
+        {details.name ? <p>User name is {details.name}</p> : null}
+      </div>
       <Link
         to="/users"
         className="flex px-4 py-2 items-center gap-2 rounded-lg border"
