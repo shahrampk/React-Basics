@@ -26,7 +26,7 @@ const PasswordGenerator = () => {
     let pass = "";
 
     let str =
-      "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+      "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&";
 
     for (let i = 0; i < getRandomInt(8, 16) + 1; i++) {
       const charIndex = Math.floor(Math.random() * str.length);

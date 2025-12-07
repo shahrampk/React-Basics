@@ -3,10 +3,20 @@ import { useEffect, useRef, useState } from "react";
 const ColorGenerator = () => {
   const [colors, setColors] = useState([]);
   const copiedRef = useRef();
-  const color = () => Math.floor(Math.random() * 255 + 1);
+  function getRandomInt(min, max) {
+    if (min > max) {
+      [min, max] = [max, min];
+    }
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  } // 0123456789abcdef => #2f9e44
   const colorGenerator = () => {
-    // rgba(255, 255, 255, 0.33121)
-    return `rgb(${color()}, ${color()}, ${color()})`;
+    let color = "#";
+    let str = "0123456789abcdef";
+    for (let i = 0; i < 6; i++) {
+      color += str.charAt(getRandomInt(0, 15));
+    }
+    return color;
   };
 
   const generateColorArr = () => {
