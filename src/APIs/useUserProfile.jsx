@@ -1,21 +1,26 @@
 import { useState, useEffect } from "react";
 
-export default function useUsersProfile(username) {
-  console.log("ok");
+export default function useUsersProfile({ id }) {
+  console.log(id);
 
-  //   const [users, setUsers] = useState([]);
+  const [userData, setUserData] = useState([]);
 
-  //   async function fetchData() {
-  //     const res = await fetch(`https://api.github.com/users/${user}`);
-  //     const data = await res.json();
-  //     console.log(data);
+  async function fetchData() {
+    try {
+      const res = await fetch(`https://api.github.com/users/${id}`);
+      if (!res.ok) return new Error();
+      const data = await res.json();
+      console.log(data);
 
-  //     setUsers(data);
-  //   }
+      setUserData(data);
+    } catch (error) {
+      throw new Error();
+    }
+  }
 
-  //   useEffect(() => {
-  //     fetchData();
-  //   }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  //   return [users, setUsers];
+  return [userData, setUserData];
 }

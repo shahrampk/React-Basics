@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const HeroSection = () => {
   return (
-    <div className="backGround flex gap-8 justify-center items-center flex-col col-span-full h-full">
+    <div className="min-h-screen w-full backGround flex gap-8 justify-center items-center flex-col col-span-full h-full">
       <h1 className="animate-slide-bottom text-7xl text-center leading font-bold">
         Let's create something <br /> with React
       </h1>

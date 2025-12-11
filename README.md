@@ -83,3 +83,4 @@
 ### 14) Api (Application Programming Interface)
 
 - Get Method
+- Post Method 

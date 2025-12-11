@@ -31,7 +31,7 @@ const ColorGenerator = () => {
   }, []);
 
   return (
-    <div className="text-black my-10 md:col-start-2 md:col-span-3 w-full px-10 md:p-0 flex flex-col gap-10 items-center">
+    <div className="my-10 md:col-start-2 md:col-span-3 w-full px-10 md:p-0 flex flex-col gap-10 items-center">
       <p className="text-5xl xl:text-6xl font-extrabold">
         Color Palette Generator
       </p>
@@ -50,7 +50,7 @@ const ColorGenerator = () => {
           );
         })}
       </div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 flex-wrap">
         <button
           onClick={generateColorArr}
           className="text-lg transition-all duration-200 bg-linear-to-br from-sky-400 via-indigo-500 to-purple-600  px-4 py-2  text-white rounded font-medium cursor-pointer"
@@ -68,7 +68,7 @@ const ColorGenerator = () => {
         >
           <p
             ref={copiedRef}
-            className=" absolute bottom-full translate-x-5 -translate-y-3 -rotate-z-10 text-black invisible"
+            className=" absolute bottom-full translate-x-5 -translate-y-3 -rotate-z-10 invisible"
           >
             Copied 👍
           </p>

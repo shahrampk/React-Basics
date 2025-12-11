@@ -1,15 +1,9 @@
 import React, { useEffect, useId, useState } from "react";
 import { Link } from "react-router";
 import fetchData from "../../APIs/useUsersData";
-import useUsersProfile from "../../APIs/useUserProfile";
 
 const Users = () => {
   const [users] = fetchData();
-  console.log(users);
-
-  const fetchUserProfile = (name) => {
-    useUsersProfile(name);
-  };
 
   return (
     <div className="col-span-full flex justify-center flex-col gap-10 h-full items-center">
@@ -22,7 +16,7 @@ const Users = () => {
                 key={user.id}
                 onClick={() => fetchUserProfile(user.name)}
                 className="mx-5 text-purple-900 inline-block"
-                to={`/user/${user.id}`}
+                to={`/user/${user.login}`}
               >
                 {user.login}
               </Link>

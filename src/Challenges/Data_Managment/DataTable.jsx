@@ -1,8 +1,11 @@
-import React, { useId } from "react";
+import useJsonApi from "../../APIs/useJsonApi";
 
-const DataTable = ({ users }) => {
+const DataTable = () => {
+  const [usersData, , showLoader] = useJsonApi();
+  console.log(showLoader);
+
   return (
-    <table className="form bg-red-700 w-full rounded-lg overflow-hidden shadow-2xl h-[500px] shadow-black border-collapse">
+    <table className="col-span-3 col-start-2 form bg-red-700 rounded-lg overflow-hidden shadow-2xl h-[500px] shadow-black border-collapse">
       <thead className="backdrop-blur-md bg-black/20">
         <tr className=" grid grid-cols-4 justify-between w-full font-black text-center divide divide-gray-600">
           <td className="p-5 border border-gray-900/30 ">Id</td>
@@ -12,8 +15,14 @@ const DataTable = ({ users }) => {
         </tr>
       </thead>
       <tbody>
-        {users.map((user, i) => {
-          return (
+        {showLoader ? (
+          <tr>
+            <td className="flex justify-center items-center">
+              <h1>Loading...</h1>
+            </td>
+          </tr>
+        ) : (
+          usersData.map((user, i) => (
             <tr
               key={i}
               className=" grid grid-cols-4 justify-between w-full text-center divide-black"
@@ -25,8 +34,8 @@ const DataTable = ({ users }) => {
                 {user.password}
               </td>
             </tr>
-          );
-        })}
+          ))
+        )}
       </tbody>
     </table>
   );

@@ -9,22 +9,26 @@ import {
   Details,
   Page_404,
   Students,
-  Users,
   UserDetails,
 } from "./index";
+import InputForm from "../Challenges/Data_Managment/InputForm";
+import DataTable from "../Challenges/Data_Managment/DataTable";
+import useJsonApi from "../APIs/useJsonApi";
 
 const Routs = () => {
+  const [usersData] = useJsonApi();
   return (
     <Routes>
       <Route path="/" element={<HeroSection />} />
       <Route path="/Color-generator" element={<ColorGenerator />} />
       <Route path="/Password-generator" element={<PasswordGenerator />} />
-      <Route path="/users" element={<Users />} />
-      <Route path="/user/:id/:name?" element={<UserDetails />} /> {/* For optional segments we add Question mark after the optional segment  */}
+      <Route path="/Apis" element={<InputForm />} />
+      <Route path="/addUsers" element={<DataTable users={usersData} />} />
+      <Route path="/user/:id/:name?" element={<UserDetails />} />
       <Route path="/collage" element={<Collage />}>
+        <Route path="" element={<Students />} />
         <Route path="departments" element={<Departments />} />
         <Route path="details" element={<Details />} />
-        <Route path="" element={<Students />} />
       </Route>
       <Route path="/*" element={<Page_404 />} />
     </Routes>

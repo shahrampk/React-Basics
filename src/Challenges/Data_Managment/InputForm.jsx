@@ -1,20 +1,27 @@
 import React, { useEffect, useState } from "react";
 
-const InputForm = ({ users, setUsers }) => {
+const InputForm = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-  const handleForm = (e) => {
+
+  const postUsers = async (e) => {
     e.preventDefault();
-    setUsers([
-      { id: Date.now(), name: name, email: email, password: password },
-      ...users,
-    ]);
+    try {
+      const res = await fetch("http://localhost:3000/users", {
+        method: "Post",
+        body: JSON.stringify({ name, email, password }),
+      });
+      const data = await res.json();
+      if (data) alert("User added");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
     <form
-      onSubmit={handleForm}
+      onSubmit={postUsers}
       className="bg-linear-to-br bg-green-700 py-10 px-8 rounded-lg flex flex-col gap-5 shadow-xl shadow-black"
     >
       <div className="flex flex-col gap-2">
@@ -42,6 +49,7 @@ const InputForm = ({ users, setUsers }) => {
           id="email"
           placeholder="Enter your email"
           className="text-xl px-3 py-2 outline-none border-2"
+          autoComplete="email"
           required
         />
       </div>
@@ -53,6 +61,7 @@ const InputForm = ({ users, setUsers }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
+          autoComplete="current-password"
           id="password"
           placeholder="Enter your password"
           className="text-xl px-3 py-2 outline-none border-2"

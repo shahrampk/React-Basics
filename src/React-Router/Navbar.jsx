@@ -1,7 +1,9 @@
+import { Menu } from "lucide-react";
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router";
+import SideBar from "./SideBar";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <header className="flex justify-between items-center px-10 py-5 fixed w-full text-white bg-black/80 backdrop-blur-sm">
       <div className="logoBox">
@@ -10,7 +12,7 @@ const Navbar = () => {
         </Link>
       </div>
       <nav>
-        <ul className="flex gap-3">
+        <ul className="lg:flex gap-3 hidden">
           <li>
             <NavLink
               className={({ isActive }) =>
@@ -47,6 +49,7 @@ const Navbar = () => {
               PasswordGenerator
             </NavLink>
           </li>
+
           <li>
             <NavLink
               className={({ isActive }) =>
@@ -54,9 +57,9 @@ const Navbar = () => {
                   isActive ? "bg-red-600" : null
                 }`
               }
-              to="/collage"
+              to="/Apis"
             >
-              Collage
+              Form
             </NavLink>
           </li>
           <li>
@@ -66,12 +69,15 @@ const Navbar = () => {
                   isActive ? "bg-red-600" : null
                 }`
               }
-              to="/users"
+              to="/addUsers"
             >
-              Users
+              Add Users
             </NavLink>
           </li>
         </ul>
+        <div onClick={toggle} className="lg:hidden cursor-pointer">
+          <Menu />
+        </div>
       </nav>
     </header>
   );
